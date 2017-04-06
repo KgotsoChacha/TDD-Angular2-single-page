@@ -8,7 +8,7 @@ You will need to install the latest version of node, found [here](https://nodejs
 
 ## Running the application
 
-Ensure you are inside the TDD-Angular application and open the terminal from there.
+Ensure you are inside the TDD-Angular folder and open the terminal from there.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
