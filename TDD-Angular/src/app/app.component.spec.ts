@@ -25,10 +25,10 @@ describe('Testing the app component', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('div').textContent).toContain('section');
   }));
-  it("should have section 1 equal to section 1", async(()=>{
+  it("should have section 3 equal to section 3", async(()=>{
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector("#section-1").textContent).toEqual("section-1")
+    expect(compiled.querySelector("#section-3").textContent).toEqual("section-3")
   }));
 });
