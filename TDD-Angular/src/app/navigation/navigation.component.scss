@@ -1,0 +1,26 @@
+// Core variables and mixins
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+ 
+
+
+
+$navigation-background-color: #3b434f;
+
+nav{
+ border: 1px solid black;
+}
+.search-style{
+    width: 100%;
+    border: 1px dotted grey;
+    border-bottom: 0;
+    border-top: 0;
+
+    width: 100%;
+    height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: 6px 12px;
+    
+ 
+}
+
+

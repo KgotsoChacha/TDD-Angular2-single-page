@@ -22,6 +22,20 @@ describe("Navigation component", () =>{
         let fixture = TestBed.createComponent(NavigationComponent);
         fixture.detectChanges();
         let compile = fixture.debugElement.nativeElement;
-        expect(compile.innerHTML).toContain("Movies Collection");
+        expect(compile.querySelector('nav a').textContent).toContain("Movies Collection");
+    }));
+
+    it("should have a search label", async(()=>{
+        let fixture = TestBed.createComponent(NavigationComponent);
+        fixture.detectChanges();
+        let compile = fixture.debugElement.nativeElement;
+        expect(compile.querySelector('label').textContent).toContain('Search');
+    }));
+
+    it("should have a search box", async(()=>{
+        let fixture = TestBed.createComponent(NavigationComponent);
+        fixture.detectChanges();
+        let compile = fixture.debugElement.nativeElement;
+        expect(compile.querySelector('input')).toBeTruthy;
     }));
 });

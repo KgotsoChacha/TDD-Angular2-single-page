@@ -38,7 +38,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Firefox'], //you can use chrome instead of firefox
+    browsers: ['Chrome'], //you can use chrome instead of firefox
     singleRun: false
   });
 };
