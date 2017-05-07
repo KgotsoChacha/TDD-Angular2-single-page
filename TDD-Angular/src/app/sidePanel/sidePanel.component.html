@@ -1,8 +1,14 @@
-Panel coming here soon
 <aside id="side-panel">
     <ul>
-        <li>My Library</li>
-        <li>Explore</li>
-        <li>Recent</li>
+        <li (click)="ExploreisCollapsed = !ExploreisCollapsed">My Library</li>
+        <ul (Explorecollapsed)="Explorecollapsed($event)" (Exploreexpanded)="Exploreexpanded($event)" [collapse]="ExploreisCollapsed">   
+            <li>Newly added</li>
+            <li>Playing now</li>
+        </ul>
+        <li (click)="isCollapsed = !isCollapsed">Explore</li>
+        <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">   
+            <li>Recent</li>
+            <li>Playing now</li>
+        </ul>
     </ul>
 </aside>

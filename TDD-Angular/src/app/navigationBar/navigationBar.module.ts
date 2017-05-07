@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
-import {NavigationComponent} from './navigation.component';
+import {NavigationBarComponent} from './navigationBar.component';
 
 @NgModule({
-    declarations: [NavigationComponent],
+    declarations: [NavigationBarComponent],
     imports: [BrowserModule],
     providers: [],
-    bootstrap : [NavigationComponent]
+    bootstrap : [NavigationBarComponent]
 })
 export class NavigationModule{ }
