@@ -7,23 +7,14 @@ import {Component} from '@angular/core'
     styleUrls: ['./sidePanel.component.scss']
 })
 export class SidePanelComponent{
-    public ExploreisCollapsed:boolean = true;
- 
-  public Exporecollapsed(event:any):void {
-    console.log(event);
-  }
- 
-  public Exploreexpanded(event:any):void {
-    console.log(event);
-  }
+    hideLibraryOptions = true;
+    hideExploreOptions = true;
 
-    public isCollapsed:boolean = true;
- 
-  public collapsed(event:any):void {
-    console.log(event);
-  }
- 
-  public expanded(event:any):void {
-    console.log(event);
-  }
+    showOptions(option:string){
+      if(option == "Library"){
+        this.hideLibraryOptions  ? this.hideLibraryOptions = false : this.hideLibraryOptions = true
+      }else if(option == "Explore"){
+        this.hideExploreOptions  ? this.hideExploreOptions = false : this.hideExploreOptions = true
+      }
+    }
 }
