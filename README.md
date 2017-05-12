@@ -1,9 +1,9 @@
-# Single page Angular application
+# Movie collection single page angular application
 
-This application is a single page application with sectional scrolling and follows a Test-Driven-Development approach.
+This application is a single page application that can be used to store a collection of movies, add movies and follows a Test-Driven-Development approach.
 
 ## Testing
-Testing guards your application from breaking existing code, also known as regression. It also provides structure as to how the application shoud work. 
+Testing guards your application from breaking existing code. It also provides structure as to how the application shoud work. 
 It is an absolute must to test every piece of code you write to save yourself pains later.
 
 ## Installation
