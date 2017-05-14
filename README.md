@@ -1,6 +1,6 @@
-# Movie collection single page angular application
+# Videos collection single page angular 2 application
 
-This application is a single page application that can be used to store a collection of movies, add movies and follows a Test-Driven-Development approach.
+This application is a single page application that can be used to store a collection of videos and follows a Test-Driven-Development approach.
 
 ## Testing
 Testing guards your application from breaking existing code. It also provides structure as to how the application shoud work. 
