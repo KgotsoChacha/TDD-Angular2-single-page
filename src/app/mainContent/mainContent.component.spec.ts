@@ -11,7 +11,9 @@ describe('Main content component',()=>{
     })
     
     it("should create the main content component",async(()=>{
-        let app = TestBed.createComponent(MainContentComponent);
-        expect(app).toBeTruthy();
+        let fixture = TestBed.createComponent(MainContentComponent);
+        let component = fixture.debugElement.componentInstance;
+        expect(component).toBeTruthy();
     }))
+     
 })

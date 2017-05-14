@@ -1,16 +1,8 @@
 <aside id="side-panel">
     <section>
         <ul>
-            <li (click)="showOptions('Library')"> <b class="{{libraryCaretPostion}}"></b> <a>My Library</a></li>
-            <ul [hidden]="hideLibraryOptions">
-                <li > <b class="bullet"></b>  <a>Newly added</a></li>
-            </ul>
-            
-            <li (click)="showOptions('Explore')" > <b class="{{exploreCaretPostion}}"></b>  <a >Explore</a> </li>
-            <ul [hidden]="hideExploreOptions">
-                <li > <b class="bullet"></b> <a>Recent</a></li>
-                <li > <b class="bullet"></b> <a>Playing now</a></li>
-            </ul>
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">Explore</a></li>
         </ul>
 
     </section>

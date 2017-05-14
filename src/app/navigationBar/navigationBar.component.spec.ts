@@ -14,23 +14,16 @@ describe("NavigationBar component", () =>{
 
     it("should create the naviation component",async(()=>{
         let fixture = TestBed.createComponent(NavigationBarComponent);
-        let app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy;
+        let component = fixture.debugElement.componentInstance;
+        expect(component).toBeTruthy();
     }));
 
     it("should have a title", async(()=>{
         let fixture = TestBed.createComponent(NavigationBarComponent);
         fixture.detectChanges();
         let compile = fixture.debugElement.nativeElement;
-        expect(compile.querySelector('nav a').textContent).toContain("Movies Collection");
+        expect(compile.querySelector('nav a').textContent).toContain("Videos Collection");
     }));
-
-    // it("should have a search label", async(()=>{
-    //     let fixture = TestBed.createComponent(NavigationBarComponent);
-    //     fixture.detectChanges();
-    //     let compile = fixture.debugElement.nativeElement;
-    //     expect(compile.querySelector('label').textContent).toContain('Search');
-    // }));
 
     it("should have a search box", async(()=>{
         let fixture = TestBed.createComponent(NavigationBarComponent);

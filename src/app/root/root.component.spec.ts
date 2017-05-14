@@ -14,7 +14,8 @@ describe('Root component',()=>{
     })
     
     it("should create the root component",async(()=>{
-        let app = TestBed.createComponent(RootComponent);
+        let fixture = TestBed.createComponent(RootComponent);
+        let app = fixture.debugElement.componentInstance;
         expect(app).toBeTruthy();
     }))
 })

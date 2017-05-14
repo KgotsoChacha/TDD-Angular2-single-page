@@ -10,14 +10,15 @@ describe('Side Panel component', ()=>{
     })
 
     it('should create the side panel component', async(()=>{
-        let component = TestBed.createComponent(SidePanelComponent);
+        let fixture = TestBed.createComponent(SidePanelComponent);
+        let component = fixture.debugElement.componentInstance;
         expect(component).toBeTruthy();
     }));
 
-    it('should have options in the panel', async(()=>{
+    it('should have two options in the panel', async(()=>{
         let component = TestBed.createComponent(SidePanelComponent);
         let fixture = component.debugElement.nativeElement;
-        expect(fixture.querySelector('ul').children.length).toBeGreaterThanOrEqual(2);
+        expect(fixture.querySelector('ul').children.length).toEqual(2);
     }));
 })
 
