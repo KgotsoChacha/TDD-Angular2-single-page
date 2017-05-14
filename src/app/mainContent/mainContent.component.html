@@ -1,8 +1,8 @@
 <div class="mainContent container">
-  <ul class="list-group" >
-    
-  <li class="list-group-item" *ngFor="let movie of movieList">{{movie}}</li>
-  
-</ul>
-
+    <ul class="list-group" >
+      <li class="list-group-item" *ngFor="let movie of movieList">{{movie}}</li>
+    </ul>
+  <div *ngIf="movieList == null || movieList.length <= 0">
+    <p>Library empty, consider adding some content</p>
+  </div>
 </div>
