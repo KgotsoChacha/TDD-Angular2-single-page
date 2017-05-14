@@ -18,10 +18,10 @@ nav{
     height: 40px; 
     margin: 5px 0 5px;
     border:none;
+     border-radius: 5px;
+    padding-left: 15px;
     -moz-border-radius:5px; /* Firefox */
     -webkit-border-radius: 5px; /* Safari, Chrome */
-    border-radius: 5px;
-    padding-left: 15px;
 }
 
 .navbar-brand{
