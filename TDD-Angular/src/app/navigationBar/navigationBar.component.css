@@ -1,0 +1,18 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+
+
+nav{
+ border: 1px solid black;
+}
+.search-style{
+    width: 100%;
+    border: 1px dotted grey;
+    border-bottom: 0;
+    border-top: 0;
+    width: 100%;
+    height: $input-height-base; 
+    padding: 6px 12px;
+}
+
+

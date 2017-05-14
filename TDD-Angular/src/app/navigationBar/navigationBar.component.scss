@@ -1,19 +1,31 @@
-// Core variables and mixins
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
 $navigation-background-color: #3b434f;
+$component-theme-color: #3b5989;
+$component-font: "Times New Roman", Times, serif;
 
 nav{
- border: 1px solid black;
+ background: $component-theme-color;
+ font-family: $component-font;
+    a{
+        font-size: 16px;
+    }
 }
 .search-style{
     width: 100%;
-    border: 1px dotted grey;
-    border-bottom: 0;
-    border-top: 0;
-    width: 100%;
-    height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-    padding: 6px 12px;
+    font-size: 18px;
+    font-style: oblique;
+    height: 40px; 
+    margin: 5px 0 5px;
+    border:none;
+    -moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.navbar-brand{
+    color: white;
 }
 
 

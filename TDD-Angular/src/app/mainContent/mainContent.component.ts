@@ -6,4 +6,6 @@ import {Component} from '@angular/core';
     templateUrl: './mainContent.component.html',
     styleUrls: ['./mainContent.component.scss']
 })
-export class MainContentComponent{}
+export class MainContentComponent{
+    movieList = ["Finding Dory", "Saint", "Forest", "Band of Robbers", "Norm of the North","Batman"];
+}
